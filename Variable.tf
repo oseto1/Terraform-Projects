@@ -40,3 +40,10 @@ default        = "10.0.5.0/24"
 description    = "private data subnet az2 cidr block"
 type           = string
 }
+
+# security group variables
+variable "ssh_location" {
+default        = "0.0.0.0/0"
+description    = "private ip address of ece2"
+type           = string
+}
