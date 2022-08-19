@@ -11,11 +11,12 @@ resource "aws_security_group" "alb_security_group" {
     to_port          = 80
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
+  }
 
   ingress {
     description      = "https access"
     from_port        = 443
-    to_port          = 433
+    to_port          = 443
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
   }
@@ -50,7 +51,7 @@ resource "aws_security_group" "ssh_security_group" {
   egress {
     from_port        = 0
     to_port          = 0
-    protocol         = -1
+    protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
