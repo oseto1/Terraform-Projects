@@ -72,3 +72,10 @@ default        = false
 description    = "create a standby db instance"
 type           = bool
 }
+
+# application load balancer variables
+variable "ssl_certificate_arn" {
+default        = "arn:aws:acm:us-east-1:659003453606:certificate/7cc551d0-c6ce-4513-be82-42be488a78fc"
+description    = "ssl certificate arn"
+type           = string
+}
