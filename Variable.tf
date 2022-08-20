@@ -111,3 +111,16 @@ default        = "mykey1"
 description    = "name of my ec2 key pair"
 type           = string
 }
+
+# route 53 variables
+variable "domain_name" {
+default        = "devopcarrier.com"
+description    = "domain name"
+type           = string
+}
+
+variable "record_name" {
+default        = "www"
+description    = "sub name name"
+type           = string
+}
