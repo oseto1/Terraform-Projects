@@ -47,3 +47,28 @@ default        = "0.0.0.0/0"
 description    = "private ip address of ece2"
 type           = string
 }
+
+# rds variable
+variable "database_snapshot_identifier" {
+default        = "arn:aws:rds:us-east-1:659003453606:snapshot:fleetcart-final-snapshot"
+description    = "database snapshot"
+type           = string
+}
+
+variable "database_instance_class" {
+default        = "db.t2.micro"
+description    = "database instance class"
+type           = string
+}
+
+variable "database_instance_identifier" {
+default        = "dev-rds-database"
+description    = "database instance identifier"
+type           = string
+}
+
+variable "muiti_az_deployment" {
+default        = false
+description    = "create a standby db instance"
+type           = bool
+}
