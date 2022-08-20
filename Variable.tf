@@ -79,3 +79,10 @@ default        = "arn:aws:acm:us-east-1:659003453606:certificate/7cc551d0-c6ce-4
 description    = "ssl certificate arn"
 type           = string
 }
+
+# sns topic variables
+variable "operator_email" {
+default        = "oseto4life@gmail.com"
+description    = "a valid email address"
+type           = string
+}
